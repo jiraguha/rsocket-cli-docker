@@ -6,21 +6,15 @@ Docker files for [rsocket-cli](https://github.com/making/rsc) published on
 
 ## Run locally
 
-To start the `deno` repl:
-
-```sh
-$ docker run -it risecard/rsocket-cli:latest repl
-```
-
 To shell into the docker runtime:
 
 ```sh
 $ docker run -it risecard/rsocket-cli:latest sh
 ```
 
-## (optional) Add `deno` alias to your shell
+## (optional) Add `rsocket-cli` alias to your shell
 
-Alternatively, you can add `deno` command to your shell init file (e.g.
+Alternatively, you can add `rsocket-cli` command to your shell init file (e.g.
 `.bashrc`):
 
 ```sh
