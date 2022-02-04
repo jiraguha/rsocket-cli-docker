@@ -7,7 +7,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
   && apt-get install -y unzip \
   && rm -rf /var/lib/apt/lists/*
 ARG RSOCKET_VESION
-RUN curl -fsSL https://github.com/making/rsc/releases/download/$RSOCKET_CLI_VESION/rsc-x86_64-pc-linux \
+RUN curl -fsSL https://github.com/making/rsc/releases/download/${RSOCKET_CLI_VESION}/rsc-x86_64-pc-linux \
     --output rsocket-cli \
   && mkdir -p ./rsocket-cli-d/bin && mv rsocket-cli rsocket-cli-d/bin/rsocket-cli  \
   && chmod 755 rsocket-cli-d/bin/rsocket-cli
